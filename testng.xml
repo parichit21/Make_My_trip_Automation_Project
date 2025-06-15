@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FrameWork">
+    <test  name="Search Flight Test">
+        <classes>
+            <class name="com.makemyTrip.TestCases.TestSetup"/> <!-- Ensure this runs -->
+            <class name="com.makemyTrip.TestCases.FlightPageTest">
+            <methods>
+                <include name="searchFlight"/>
+            </methods>
+        </class>
+        </classes>
+    </test>
+</suite>
