@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="FrameWork">
+    <listeners>
+        <listener class-name="Listners.CustomListners">
+        </listener>
+    </listeners>
     <test  name="Search Flight Test">
         <classes>
             <class name="com.makemyTrip.TestCases.TestSetup"/> <!-- Ensure this runs -->
@@ -11,4 +15,14 @@
         </class>
         </classes>
     </test>
+
+    <test  name="Login page test">
+        <classes>
+<!--            <class name="com.makemyTrip.TestCases.TestSetup"/> &lt;!&ndash; Ensure this runs &ndash;&gt;-->
+            <class name="com.makemyTrip.TestCases.LoginPageTest">
+            </class>
+        </classes>
+    </test>
+
+
 </suite>
